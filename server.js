@@ -2,19 +2,15 @@ const express = require("express");
 const cors = require("cors");
 const fs = require("fs");
 const path = require("path");
-const puppeteer = require("puppeteer");
 const INIT_ENGINE = require("stockfish/src/stockfish-17.1-lite-51f59da.js");
 
 // In-memory cache with TTL
 const cache = {
   scrapeData: null,
   scrapeTime: 0,
-  cfSolved: false,
   TTL: 60 * 60 * 1000 // 1 hour in milliseconds
 };
 
-// Browser instance pool (reuse instead of creating new ones)
-let browserInstance = null;
 let isScraping = false;
 const evalQueue = [];
 let isProcessingEval = false;
@@ -159,48 +155,49 @@ const ENDPOINTS = {
   }
 };
 
-// Get or create a persistent browser instance
-const getBrowser = async () => {
-  if (!browserInstance) {
-    browserInstance = await puppeteer.launch({
-      headless: true,
-      args: [
-        "--no-sandbox",
-        "--disable-setuid-sandbox",
-        "--disable-dev-shm-usage" // Render memory fix
-      ]
-    });
-  }
-  return browserInstance;
-};
+// Direct fetch with rotating user agents and retry logic
+async function fetchJSON(url, retries = 3) {
+  const userAgents = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Mobile/15E148 Safari/604.1"
+  ];
 
-// Reuse browser instance for all fetches
-async function fetchJSON(url) {
-  const browser = await getBrowser();
-  const page = await browser.newPage();
-
-  try {
-    await page.setUserAgent(
-      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121 Safari/537.36"
-    );
-
-    // Only navigate to homepage once per scrape session (not per fetch)
-    if (!cache.cfSolved) {
-      await page.goto("https://2700chess.com", {
-        waitUntil: "networkidle2",
-        timeout: 60000
+  for (let attempt = 0; attempt < retries; attempt++) {
+    try {
+      const userAgent = userAgents[Math.floor(Math.random() * userAgents.length)];
+      
+      const response = await fetch(url, {
+        method: "GET",
+        headers: {
+          "User-Agent": userAgent,
+          "Referer": "https://2700chess.com",
+          "Accept": "application/json",
+          "Accept-Language": "en-US,en;q=0.9"
+        },
+        timeout: 10000
       });
-      cache.cfSolved = true;
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+
+      const data = await response.json();
+      console.log(`✓ Fetched ${url.split('?')[0]} (attempt ${attempt + 1})`);
+      return data;
+    } catch (error) {
+      console.log(`⚠ Fetch failed for ${url.split('?')[0]}: ${error.message} (attempt ${attempt + 1}/${retries})`);
+      
+      if (attempt < retries - 1) {
+        // Exponential backoff: 1s, 2s, 4s
+        const delay = Math.pow(2, attempt) * 1000;
+        await new Promise(resolve => setTimeout(resolve, delay));
+      } else {
+        throw new Error(`Failed to fetch ${url} after ${retries} attempts: ${error.message}`);
+      }
     }
-
-    const data = await page.evaluate(async (endpoint) => {
-      const res = await fetch(endpoint);
-      return await res.json();
-    }, url);
-
-    return data;
-  } finally {
-    await page.close();
   }
 }
 
@@ -257,7 +254,6 @@ async function scrape2700() {
   // Cache the result
   cache.scrapeData = output;
   cache.scrapeTime = Date.now();
-  cache.cfSolved = false; // Reset CF flag for next scrape session
 
   console.log("✔ Scrape completed and cached");
   return output;
@@ -281,7 +277,6 @@ app.get("/scrape", async (req, res) => {
     const forceRefresh = req.query.force === "true";
     if (forceRefresh) {
       cache.scrapeData = null; // Clear cache to force fresh scrape
-      cache.cfSolved = false;
     }
 
     isScraping = true;
@@ -325,10 +320,7 @@ app.listen(PORT, () => {
 });
 
 // Graceful shutdown
-process.on("SIGTERM", async () => {
+process.on("SIGTERM", () => {
   console.log("SIGTERM received, shutting down gracefully...");
-  if (browserInstance) {
-    await browserInstance.close();
-  }
   process.exit(0);
 });
