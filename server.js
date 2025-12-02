@@ -5,6 +5,20 @@ const path = require("path");
 const puppeteer = require("puppeteer");
 const INIT_ENGINE = require("stockfish/src/stockfish-17.1-lite-51f59da.js");
 
+// In-memory cache with TTL
+const cache = {
+  scrapeData: null,
+  scrapeTime: 0,
+  cfSolved: false,
+  TTL: 60 * 60 * 1000 // 1 hour in milliseconds
+};
+
+// Browser instance pool (reuse instead of creating new ones)
+let browserInstance = null;
+let isScraping = false;
+const evalQueue = [];
+let isProcessingEval = false;
+
 const app = express();
 app.use(cors());
 
@@ -82,22 +96,51 @@ if (typeof INIT_ENGINE === "function") {
   console.error("Stockfish initializer not found in package");
 }
 
+// Queue-based evaluation to prevent concurrency issues
 const evaluateFen = (fen) =>
-  new Promise((resolve) => {
-    engineWrapper.postMessage(`position fen ${fen}`);
-    engineWrapper.postMessage("go depth 12");
-    engineWrapper.onmessage = (line) => {
-      if (typeof line === "string" && line.includes("score")) {
-        if (line.includes("score cp")) {
-          const cp = Number(line.split("score cp ")[1].split(" ")[0]);
-          resolve(cp / 100);
-        } else if (line.includes("score mate")) {
-          const mate = Number(line.split("score mate ")[1].split(" ")[0]);
-          resolve(mate > 0 ? 9999 : -9999);
-        }
-      }
-    };
+  new Promise((resolve, reject) => {
+    evalQueue.push({ fen, resolve, reject });
+    processEvalQueue();
   });
+
+const processEvalQueue = async () => {
+  if (isProcessingEval || evalQueue.length === 0) return;
+  
+  isProcessingEval = true;
+  const { fen, resolve, reject } = evalQueue.shift();
+  
+  try {
+    const result = await new Promise((resolveEval, rejectEval) => {
+      const timeout = setTimeout(() => {
+        rejectEval(new Error("Evaluation timeout"));
+      }, 30000);
+      
+      engineWrapper.postMessage(`position fen ${fen}`);
+      engineWrapper.postMessage("go depth 12");
+      
+      engineWrapper.onmessage = (line) => {
+        if (typeof line === "string" && line.includes("score")) {
+          clearTimeout(timeout);
+          if (line.includes("score cp")) {
+            const cp = Number(line.split("score cp ")[1].split(" ")[0]);
+            resolveEval(cp / 100);
+          } else if (line.includes("score mate")) {
+            const mate = Number(line.split("score mate ")[1].split(" ")[0]);
+            resolveEval(mate > 0 ? 9999 : -9999);
+          }
+        }
+      };
+    });
+    resolve(result);
+  } catch (error) {
+    reject(error);
+  } finally {
+    isProcessingEval = false;
+    if (evalQueue.length > 0) {
+      setImmediate(processEvalQueue);
+    }
+  }
+};
 
 // ========== 2700chess.com SCRAPER ==========
 
@@ -116,33 +159,58 @@ const ENDPOINTS = {
   }
 };
 
-async function fetchJSON(url) {
-  const browser = await puppeteer.launch({
-    headless: true,
-    args: ["--no-sandbox", "--disable-setuid-sandbox"]
-  });
+// Get or create a persistent browser instance
+const getBrowser = async () => {
+  if (!browserInstance) {
+    browserInstance = await puppeteer.launch({
+      headless: true,
+      args: [
+        "--no-sandbox",
+        "--disable-setuid-sandbox",
+        "--disable-dev-shm-usage" // Render memory fix
+      ]
+    });
+  }
+  return browserInstance;
+};
 
+// Reuse browser instance for all fetches
+async function fetchJSON(url) {
+  const browser = await getBrowser();
   const page = await browser.newPage();
 
-  await page.setUserAgent(
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121 Safari/537.36"
-  );
+  try {
+    await page.setUserAgent(
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121 Safari/537.36"
+    );
 
-  await page.goto("https://2700chess.com", {
-    waitUntil: "networkidle2",
-    timeout: 60000
-  });
+    // Only navigate to homepage once per scrape session (not per fetch)
+    if (!cache.cfSolved) {
+      await page.goto("https://2700chess.com", {
+        waitUntil: "networkidle2",
+        timeout: 60000
+      });
+      cache.cfSolved = true;
+    }
 
-  const data = await page.evaluate(async (endpoint) => {
-    const res = await fetch(endpoint);
-    return await res.json();
-  }, url);
+    const data = await page.evaluate(async (endpoint) => {
+      const res = await fetch(endpoint);
+      return await res.json();
+    }, url);
 
-  await browser.close();
-  return data;
+    return data;
+  } finally {
+    await page.close();
+  }
 }
 
 async function scrape2700() {
+  // Check if cache is still valid
+  if (cache.scrapeData && Date.now() - cache.scrapeTime < cache.TTL) {
+    console.log("Returning cached scrape data (TTL not expired)");
+    return cache.scrapeData;
+  }
+
   const output = {
     general: { standard: [], rapid: [], blitz: [] },
     women: { standard: [], rapid: [], blitz: [] },
@@ -186,13 +254,12 @@ async function scrape2700() {
   output.girls = girls.slice(0, 20);
   console.log("Girls: top 20 selected");
 
-  fs.writeFileSync(
-    "chesspulse_filtered.json",
-    JSON.stringify(output, null, 2),
-    "utf-8"
-  );
+  // Cache the result
+  cache.scrapeData = output;
+  cache.scrapeTime = Date.now();
+  cache.cfSolved = false; // Reset CF flag for next scrape session
 
-  console.log("✔ Saved: chesspulse_filtered.json");
+  console.log("✔ Scrape completed and cached");
   return output;
 }
 
@@ -207,26 +274,61 @@ app.get("/evaluate", async (req, res) => {
 
 app.get("/scrape", async (req, res) => {
   try {
+    if (isScraping) {
+      return res.status(429).json({ success: false, error: "Scrape already in progress. Please wait." });
+    }
+
+    const forceRefresh = req.query.force === "true";
+    if (forceRefresh) {
+      cache.scrapeData = null; // Clear cache to force fresh scrape
+      cache.cfSolved = false;
+    }
+
+    isScraping = true;
     console.log("Starting scrape...");
     const result = await scrape2700();
-    res.json({ success: true, data: result });
+    isScraping = false;
+    
+    res.json({ 
+      success: true, 
+      data: result,
+      cached: !forceRefresh && cache.scrapeTime > 0,
+      cacheExpiry: new Date(cache.scrapeTime + cache.TTL).toISOString()
+    });
   } catch (error) {
+    isScraping = false;
     console.error("Scrape error:", error.message);
     res.status(500).json({ success: false, error: error.message });
   }
 });
 
 app.get("/scrape-cached", (req, res) => {
-  const filePath = path.join(__dirname, "chesspulse_filtered.json");
-  if (!fs.existsSync(filePath)) {
+  if (!cache.scrapeData) {
     return res.status(404).json({ success: false, error: "No cached data. Run /scrape first." });
   }
-  try {
-    const data = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-    res.json({ success: true, data });
-  } catch (error) {
-    res.status(500).json({ success: false, error: error.message });
-  }
+  res.json({ 
+    success: true, 
+    data: cache.scrapeData,
+    cacheExpiry: new Date(cache.scrapeTime + cache.TTL).toISOString()
+  });
 });
 
-app.listen(5000, () => console.log("Listening on http://localhost:5000"));
+// Health check endpoint
+app.get("/health", (req, res) => {
+  res.json({ status: "ok", timestamp: new Date().toISOString() });
+});
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Listening on http://localhost:${PORT}`);
+  console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
+});
+
+// Graceful shutdown
+process.on("SIGTERM", async () => {
+  console.log("SIGTERM received, shutting down gracefully...");
+  if (browserInstance) {
+    await browserInstance.close();
+  }
+  process.exit(0);
+});
