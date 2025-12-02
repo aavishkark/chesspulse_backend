@@ -117,14 +117,10 @@ const ENDPOINTS = {
 };
 
 async function fetchJSON(url) {
-  
   const browser = await puppeteer.launch({
-  headless: "new",
-  executablePath: process.env.CHROME_PATH || "/usr/bin/chromium",
-  args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"]
-});
-
-
+    headless: true,
+    args: ["--no-sandbox", "--disable-setuid-sandbox"]
+  });
 
   const page = await browser.newPage();
 

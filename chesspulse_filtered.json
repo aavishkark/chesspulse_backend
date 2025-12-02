@@ -26,7 +26,7 @@
         "type": "standard",
         "year_ago_rating_change": 9,
         "year_ago_ranking_change": 0,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 2016192,
@@ -53,7 +53,7 @@
         "type": "standard",
         "year_ago_rating_change": 8,
         "year_ago_ranking_change": 1,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 2020009,
@@ -80,7 +80,7 @@
         "type": "standard",
         "year_ago_rating_change": -10,
         "year_ago_ranking_change": -1,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 12940690,
@@ -107,7 +107,7 @@
         "type": "standard",
         "year_ago_rating_change": 43,
         "year_ago_ranking_change": 16,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 35009192,
@@ -134,61 +134,34 @@
         "type": "standard",
         "year_ago_rating_change": -26,
         "year_ago_ranking_change": -1,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 12573981,
         "name": "Firouzja, Alireza",
         "age": 22,
-        "raiting": "2763.9",
-        "raitingDiff": 1.9,
+        "raiting": "2762.3",
+        "raitingDiff": 0.3,
         "pos_change": "",
         "live_pos": 6,
         "flag": "fr",
         "games_archive": "/games?search=Firouzja%2C+Alireza",
         "statistic": "/charts/firouzja_alireza",
         "profile": "/players/firouzja_alireza",
-        "games_count": 5,
+        "games_count": 6,
         "country_name": "France",
         "birthday": "18 Jun 2003",
         "birthday_unix": 1055894400,
         "sort_helper": "_6",
         "best_pos_title": "Please log in to check the best ranks",
         "best_rating_title": "Best Rating 2804 - Dec 2021\nlog in to check the rank at that time",
-        "tooltip_text": "5 games, +1.9",
+        "tooltip_text": "6 games, +0.3",
         "live": false,
-        "last_update": 1764460800,
+        "last_update": 1764547200,
         "type": "standard",
-        "year_ago_rating_change": 0.900000000000091,
+        "year_ago_rating_change": -0.6999999999998181,
         "year_ago_ranking_change": 1,
-        "last_updated_gmt": "1 December 2025, 13:42"
-      },
-      {
-        "fideid": 25059530,
-        "name": "Praggnanandhaa R",
-        "age": 20,
-        "raiting": "2761.1",
-        "raitingDiff": 0.1,
-        "pos_change": "",
-        "live_pos": 7,
-        "flag": "in",
-        "games_archive": "/games?search=Praggnanandhaa%2C+Rameshbabu",
-        "statistic": "/charts/praggnanandhaa_r",
-        "profile": "/players/praggnanandhaa_r",
-        "games_count": 6,
-        "country_name": "India",
-        "birthday": "10 Aug 2005",
-        "birthday_unix": 1123632000,
-        "sort_helper": "_7",
-        "best_pos_title": "Please log in to check the best ranks",
-        "best_rating_title": "Best Rating 2785 - Sep 2025\nlog in to check the rank at that time",
-        "tooltip_text": "6 games, +0.1",
-        "live": false,
-        "last_update": 1764460800,
-        "type": "standard",
-        "year_ago_rating_change": 24.09999999999991,
-        "year_ago_ranking_change": 10,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 24116068,
@@ -196,8 +169,8 @@
         "age": 31,
         "raiting": "2760.0",
         "raitingDiff": 0,
-        "pos_change": "",
-        "live_pos": 8,
+        "pos_change": "↑1",
+        "live_pos": 7,
         "flag": "nl",
         "games_archive": "/games?search=Giri%2C+Anish",
         "statistic": "/charts/giri_anish",
@@ -206,7 +179,7 @@
         "country_name": "Netherlands",
         "birthday": "28 Jun 1994",
         "birthday_unix": 772761600,
-        "sort_helper": "_8",
+        "sort_helper": "_7",
         "best_pos_title": "Please log in to check the best ranks",
         "best_rating_title": "Best Rating 2798 - Oct 2015\nlog in to check the rank at that time",
         "tooltip_text": "0 games, +0.0",
@@ -214,8 +187,35 @@
         "last_update": null,
         "type": "standard",
         "year_ago_rating_change": 27,
-        "year_ago_ranking_change": 11,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "year_ago_ranking_change": 12,
+        "last_updated_gmt": "1 December 2025, 20:44"
+      },
+      {
+        "fideid": 25059530,
+        "name": "Praggnanandhaa R",
+        "age": 20,
+        "raiting": "2759.1",
+        "raitingDiff": -1.9,
+        "pos_change": "↓1",
+        "live_pos": 8,
+        "flag": "in",
+        "games_archive": "/games?search=Praggnanandhaa%2C+Rameshbabu",
+        "statistic": "/charts/praggnanandhaa_r",
+        "profile": "/players/praggnanandhaa_r",
+        "games_count": 7,
+        "country_name": "India",
+        "birthday": "10 Aug 2005",
+        "birthday_unix": 1123632000,
+        "sort_helper": "_8",
+        "best_pos_title": "Please log in to check the best ranks",
+        "best_rating_title": "Best Rating 2785 - Sep 2025\nlog in to check the rank at that time",
+        "tooltip_text": "7 games, &minus;1.9",
+        "live": false,
+        "last_update": 1764547200,
+        "type": "standard",
+        "year_ago_rating_change": 22.09999999999991,
+        "year_ago_ranking_change": 9,
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 8603405,
@@ -242,7 +242,7 @@
         "type": "standard",
         "year_ago_rating_change": 1,
         "year_ago_ranking_change": 0,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 46616543,
@@ -269,7 +269,7 @@
         "type": "standard",
         "year_ago_rating_change": -29,
         "year_ago_ranking_change": -5,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 5202213,
@@ -296,34 +296,34 @@
         "type": "standard",
         "year_ago_rating_change": 6,
         "year_ago_ranking_change": 1,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 14204118,
         "name": "Abdusattorov, Nodirbek",
         "age": 21,
-        "raiting": "2745.0",
-        "raitingDiff": 13,
+        "raiting": "2748.6",
+        "raitingDiff": 16.6,
         "pos_change": "↑5",
         "live_pos": 12,
         "flag": "uz",
         "games_archive": "/games?search=Abdusattorov%2C+Nodirbek",
         "statistic": "/charts/abdusattorov_nodirbek",
         "profile": "/players/abdusattorov_nodirbek",
-        "games_count": 5,
+        "games_count": 6,
         "country_name": "Uzbekistan",
         "birthday": "18 Sep 2004",
         "birthday_unix": 1095465600,
         "sort_helper": "_12",
         "best_pos_title": "Please log in to check the best ranks",
         "best_rating_title": "Best Rating 2783 - Oct 2024\nlog in to check the rank at that time",
-        "tooltip_text": "5 games, +13.0",
+        "tooltip_text": "6 games, +16.6",
         "live": false,
-        "last_update": 1764460800,
+        "last_update": 1764547200,
         "type": "standard",
-        "year_ago_rating_change": -32,
+        "year_ago_rating_change": -28.40000000000009,
         "year_ago_ranking_change": -6,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 5000017,
@@ -350,7 +350,7 @@
         "type": "standard",
         "year_ago_rating_change": -7,
         "year_ago_ranking_change": -3,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 738590,
@@ -377,7 +377,7 @@
         "type": "standard",
         "year_ago_rating_change": 20,
         "year_ago_ranking_change": 11,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 3503240,
@@ -404,7 +404,7 @@
         "type": "standard",
         "year_ago_rating_change": -3,
         "year_ago_ranking_change": -2,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 623539,
@@ -431,7 +431,7 @@
         "type": "standard",
         "year_ago_rating_change": 3,
         "year_ago_ranking_change": 5,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 8603677,
@@ -458,7 +458,7 @@
         "type": "standard",
         "year_ago_rating_change": 6,
         "year_ago_ranking_change": 5,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 12401137,
@@ -485,7 +485,7 @@
         "type": "standard",
         "year_ago_rating_change": -8,
         "year_ago_ranking_change": -3,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 13401319,
@@ -512,7 +512,7 @@
         "type": "standard",
         "year_ago_rating_change": -8,
         "year_ago_ranking_change": -3,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 13300474,
@@ -539,7 +539,7 @@
         "type": "standard",
         "year_ago_rating_change": -18,
         "year_ago_ranking_change": -9,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 1170546,
@@ -566,7 +566,7 @@
         "type": "standard",
         "year_ago_rating_change": -11,
         "year_ago_ranking_change": -7,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 14205483,
@@ -593,7 +593,7 @@
         "type": "standard",
         "year_ago_rating_change": 44,
         "year_ago_ranking_change": 24,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 2093596,
@@ -620,7 +620,7 @@
         "type": "standard",
         "year_ago_rating_change": -9,
         "year_ago_ranking_change": -5,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 4168119,
@@ -647,7 +647,7 @@
         "type": "standard",
         "year_ago_rating_change": -32,
         "year_ago_ranking_change": -16,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 8603820,
@@ -674,7 +674,7 @@
         "type": "standard",
         "year_ago_rating_change": -7,
         "year_ago_ranking_change": -1,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 2056437,
@@ -701,7 +701,7 @@
         "type": "standard",
         "year_ago_rating_change": 26,
         "year_ago_ranking_change": 16,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 4158814,
@@ -728,7 +728,7 @@
         "type": "standard",
         "year_ago_rating_change": 15,
         "year_ago_ranking_change": 11,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 12539929,
@@ -755,7 +755,7 @@
         "type": "standard",
         "year_ago_rating_change": 5,
         "year_ago_ranking_change": 1,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 5029465,
@@ -782,7 +782,7 @@
         "type": "standard",
         "year_ago_rating_change": -19,
         "year_ago_ranking_change": -6,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 24130737,
@@ -809,7 +809,7 @@
         "type": "standard",
         "year_ago_rating_change": -4,
         "year_ago_ranking_change": -2,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 5072786,
@@ -836,7 +836,7 @@
         "type": "standard",
         "year_ago_rating_change": -15,
         "year_ago_ranking_change": -5,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 25092340,
@@ -863,7 +863,7 @@
         "type": "standard",
         "year_ago_rating_change": 25,
         "year_ago_ranking_change": 17,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 12521213,
@@ -890,7 +890,7 @@
         "type": "standard",
         "year_ago_rating_change": 5,
         "year_ago_ranking_change": 4,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       }
     ],
     "rapid": [
@@ -919,34 +919,7 @@
         "type": "rapid",
         "year_ago_rating_change": -14,
         "year_ago_ranking_change": 0,
-        "last_updated_gmt": "1 December 2025, 13:42"
-      },
-      {
-        "fideid": 4168119,
-        "name": "Nepomniachtchi, Ian",
-        "age": 35,
-        "raiting": "2761.7",
-        "raitingDiff": -0.3,
-        "pos_change": "",
-        "live_pos": 2,
-        "flag": "ff",
-        "games_archive": "/games?search=Nepomniachtchi%2C+Ian",
-        "statistic": "/charts/nepomniachtchi_ian",
-        "profile": "/players/nepomniachtchi_ian",
-        "games_count": 5,
-        "country_name": "FIDE (Not a National Fed.)",
-        "birthday": "14 Jul 1990",
-        "birthday_unix": 647913600,
-        "sort_helper": "_2",
-        "best_pos_title": "Please log in to check the best ranks",
-        "best_rating_title": "Best Rapid Rating 2821 - Nov 2015\nlog in to check the rank at that time",
-        "tooltip_text": "5 games, &minus;0.3",
-        "live": false,
-        "last_update": 1764547200,
-        "type": "rapid",
-        "year_ago_rating_change": 3.699999999999818,
-        "year_ago_ranking_change": 4,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 13300474,
@@ -954,8 +927,8 @@
         "age": 43,
         "raiting": "2756.0",
         "raitingDiff": 0,
-        "pos_change": "",
-        "live_pos": 3,
+        "pos_change": "↑1",
+        "live_pos": 2,
         "flag": "us",
         "games_archive": "/games?search=Aronian%2C+Levon",
         "statistic": "/charts/aronian_levon",
@@ -964,7 +937,7 @@
         "country_name": "United States of America",
         "birthday": "6 Oct 1982",
         "birthday_unix": 402710400,
-        "sort_helper": "_3",
+        "sort_helper": "_2",
         "best_pos_title": "Please log in to check the best ranks",
         "best_rating_title": "Best Rapid Rating 2830 - Mar 2015\nlog in to check the rank at that time",
         "tooltip_text": "0 games, +0.0",
@@ -972,8 +945,35 @@
         "last_update": null,
         "type": "rapid",
         "year_ago_rating_change": -1,
-        "year_ago_ranking_change": 4,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "year_ago_ranking_change": 5,
+        "last_updated_gmt": "1 December 2025, 20:44"
+      },
+      {
+        "fideid": 4168119,
+        "name": "Nepomniachtchi, Ian",
+        "age": 35,
+        "raiting": "2754.9",
+        "raitingDiff": -7.1,
+        "pos_change": "↓1",
+        "live_pos": 3,
+        "flag": "ff",
+        "games_archive": "/games?search=Nepomniachtchi%2C+Ian",
+        "statistic": "/charts/nepomniachtchi_ian",
+        "profile": "/players/nepomniachtchi_ian",
+        "games_count": 7,
+        "country_name": "FIDE (Not a National Fed.)",
+        "birthday": "14 Jul 1990",
+        "birthday_unix": 647913600,
+        "sort_helper": "_3",
+        "best_pos_title": "Please log in to check the best ranks",
+        "best_rating_title": "Best Rapid Rating 2821 - Nov 2015\nlog in to check the rank at that time",
+        "tooltip_text": "7 games, &minus;7.1",
+        "live": false,
+        "last_update": 1764547200,
+        "type": "rapid",
+        "year_ago_rating_change": -3.099999999999909,
+        "year_ago_ranking_change": 3,
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 12573981,
@@ -1000,7 +1000,7 @@
         "type": "rapid",
         "year_ago_rating_change": -2,
         "year_ago_ranking_change": 4,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 8603405,
@@ -1027,7 +1027,7 @@
         "type": "rapid",
         "year_ago_rating_change": -9,
         "year_ago_ranking_change": 0,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 2020009,
@@ -1054,7 +1054,7 @@
         "type": "rapid",
         "year_ago_rating_change": -15,
         "year_ago_ranking_change": -3,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 8603677,
@@ -1081,7 +1081,7 @@
         "type": "rapid",
         "year_ago_rating_change": -29,
         "year_ago_ranking_change": -5,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 2016192,
@@ -1108,7 +1108,7 @@
         "type": "rapid",
         "year_ago_rating_change": -23,
         "year_ago_ranking_change": 1,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 623539,
@@ -1135,7 +1135,34 @@
         "type": "rapid",
         "year_ago_rating_change": -33,
         "year_ago_ranking_change": -5,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
+      },
+      {
+        "fideid": 5000017,
+        "name": "Anand, Viswanathan",
+        "age": 55,
+        "raiting": "2728.5",
+        "raitingDiff": 1.5,
+        "pos_change": "↑2",
+        "live_pos": 10,
+        "flag": "in",
+        "games_archive": "/games?search=Anand%2C+Viswanathan",
+        "statistic": "/charts/anand_viswanathan",
+        "profile": "/players/anand_viswanathan",
+        "games_count": 7,
+        "country_name": "India",
+        "birthday": "11 Dec 1969",
+        "birthday_unix": -1814400,
+        "sort_helper": "_10",
+        "best_pos_title": "Please log in to check the best ranks",
+        "best_rating_title": "Best Rapid Rating 2822 - Apr 2018\nlog in to check the rank at that time",
+        "tooltip_text": "7 games, +1.5",
+        "live": false,
+        "last_update": 1764547200,
+        "type": "rapid",
+        "year_ago_rating_change": 9.5,
+        "year_ago_ranking_change": 4,
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 24101605,
@@ -1143,8 +1170,8 @@
         "age": 27,
         "raiting": "2727.0",
         "raitingDiff": 0,
-        "pos_change": "↑1",
-        "live_pos": 10,
+        "pos_change": "",
+        "live_pos": 11,
         "flag": "ff",
         "games_archive": "/games?search=Artemiev%2C+Vladislav",
         "statistic": "/charts/artemiev_vladislav",
@@ -1153,7 +1180,7 @@
         "country_name": "FIDE (Not a National Fed.)",
         "birthday": "5 Mar 1998",
         "birthday_unix": 889056000,
-        "sort_helper": "_10",
+        "sort_helper": "_11",
         "best_pos_title": "Please log in to check the best ranks",
         "best_rating_title": "Best Rapid Rating 2812 - Nov 2018\nlog in to check the rank at that time",
         "tooltip_text": "0 games, +0.0",
@@ -1161,62 +1188,35 @@
         "last_update": null,
         "type": "rapid",
         "year_ago_rating_change": 11,
-        "year_ago_ranking_change": 5,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "year_ago_ranking_change": 4,
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
-        "fideid": 5000017,
-        "name": "Anand, Viswanathan",
-        "age": 55,
-        "raiting": "2722.1",
-        "raitingDiff": -4.9,
-        "pos_change": "↑1",
-        "live_pos": 11,
-        "flag": "in",
-        "games_archive": "/games?search=Anand%2C+Viswanathan",
-        "statistic": "/charts/anand_viswanathan",
-        "profile": "/players/anand_viswanathan",
-        "games_count": 5,
-        "country_name": "India",
-        "birthday": "11 Dec 1969",
-        "birthday_unix": -1814400,
-        "sort_helper": "_11",
-        "best_pos_title": "Please log in to check the best ranks",
-        "best_rating_title": "Best Rapid Rating 2822 - Apr 2018\nlog in to check the rank at that time",
-        "tooltip_text": "5 games, &minus;4.9",
-        "live": false,
-        "last_update": 1764547200,
-        "type": "rapid",
-        "year_ago_rating_change": 3.099999999999909,
-        "year_ago_ranking_change": 3,
-        "last_updated_gmt": "1 December 2025, 13:42"
-      },
-      {
-        "fideid": 24130737,
-        "name": "Fedoseev, Vladimir",
-        "age": 30,
+        "fideid": 35009192,
+        "name": "Erigaisi Arjun",
+        "age": 22,
         "raiting": "2719.5",
-        "raitingDiff": -20.5,
-        "pos_change": "↓4",
+        "raitingDiff": 5.5,
+        "pos_change": "↑2",
         "live_pos": 12,
-        "flag": "si",
-        "games_archive": "/games?search=Fedoseev%2C+Vladimir1",
-        "statistic": "/charts/fedoseev_vladimir",
-        "profile": "/players/fedoseev_vladimir",
-        "games_count": 5,
-        "country_name": "Slovenia",
-        "birthday": "16 Feb 1995",
-        "birthday_unix": 792892800,
+        "flag": "in",
+        "games_archive": "/games?search=Erigaisi%2C+Arjun+Kumar",
+        "statistic": "/charts/erigaisi_arjun",
+        "profile": "/players/erigaisi_arjun",
+        "games_count": 7,
+        "country_name": "India",
+        "birthday": "3 Sep 2003",
+        "birthday_unix": 1062547200,
         "sort_helper": "_12",
         "best_pos_title": "Please log in to check the best ranks",
-        "best_rating_title": "Best Rapid Rating 2810 - Jan 2018\nlog in to check the rank at that time",
-        "tooltip_text": "5 games, &minus;20.5",
+        "best_rating_title": "Best Rapid Rating 2714 - May 2023\nlog in to check the rank at that time",
+        "tooltip_text": "7 games, +5.5",
         "live": false,
         "last_update": 1764547200,
         "type": "rapid",
-        "year_ago_rating_change": -11.5,
-        "year_ago_ranking_change": 1,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "year_ago_rating_change": 25.5,
+        "year_ago_ranking_change": 11,
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 14204118,
@@ -1243,34 +1243,34 @@
         "type": "rapid",
         "year_ago_rating_change": -23,
         "year_ago_ranking_change": -3,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
-        "fideid": 35009192,
-        "name": "Erigaisi Arjun",
-        "age": 22,
-        "raiting": "2716.5",
-        "raitingDiff": 2.5,
-        "pos_change": "",
+        "fideid": 24130737,
+        "name": "Fedoseev, Vladimir",
+        "age": 30,
+        "raiting": "2715.5",
+        "raitingDiff": -24.5,
+        "pos_change": "↓6",
         "live_pos": 14,
-        "flag": "in",
-        "games_archive": "/games?search=Erigaisi%2C+Arjun+Kumar",
-        "statistic": "/charts/erigaisi_arjun",
-        "profile": "/players/erigaisi_arjun",
-        "games_count": 5,
-        "country_name": "India",
-        "birthday": "3 Sep 2003",
-        "birthday_unix": 1062547200,
+        "flag": "si",
+        "games_archive": "/games?search=Fedoseev%2C+Vladimir1",
+        "statistic": "/charts/fedoseev_vladimir",
+        "profile": "/players/fedoseev_vladimir",
+        "games_count": 7,
+        "country_name": "Slovenia",
+        "birthday": "16 Feb 1995",
+        "birthday_unix": 792892800,
         "sort_helper": "_14",
         "best_pos_title": "Please log in to check the best ranks",
-        "best_rating_title": "Best Rapid Rating 2714 - May 2023\nlog in to check the rank at that time",
-        "tooltip_text": "5 games, +2.5",
+        "best_rating_title": "Best Rapid Rating 2810 - Jan 2018\nlog in to check the rank at that time",
+        "tooltip_text": "7 games, &minus;24.5",
         "live": false,
         "last_update": 1764547200,
         "type": "rapid",
-        "year_ago_rating_change": 22.5,
-        "year_ago_ranking_change": 9,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "year_ago_rating_change": -15.5,
+        "year_ago_ranking_change": -1,
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 1170546,
@@ -1297,7 +1297,7 @@
         "type": "rapid",
         "year_ago_rating_change": -29,
         "year_ago_ranking_change": -4,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 13401319,
@@ -1324,7 +1324,7 @@
         "type": "rapid",
         "year_ago_rating_change": -4,
         "year_ago_ranking_change": 1,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 14205483,
@@ -1351,7 +1351,7 @@
         "type": "rapid",
         "year_ago_rating_change": 49,
         "year_ago_ranking_change": 28,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 3503240,
@@ -1378,7 +1378,7 @@
         "type": "rapid",
         "year_ago_rating_change": 4,
         "year_ago_ranking_change": 3,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 738590,
@@ -1405,7 +1405,7 @@
         "type": "rapid",
         "year_ago_rating_change": -7,
         "year_ago_ranking_change": 0,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 5202213,
@@ -1432,7 +1432,7 @@
         "type": "rapid",
         "year_ago_rating_change": -37,
         "year_ago_ranking_change": -8,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 703303,
@@ -1459,7 +1459,7 @@
         "type": "rapid",
         "year_ago_rating_change": -10,
         "year_ago_ranking_change": 0,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       }
     ],
     "blitz": [
@@ -1488,7 +1488,7 @@
         "type": "blitz",
         "year_ago_rating_change": -9,
         "year_ago_ranking_change": 0,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 2016192,
@@ -1515,7 +1515,7 @@
         "type": "blitz",
         "year_ago_rating_change": -22,
         "year_ago_ranking_change": 1,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 12573981,
@@ -1542,7 +1542,7 @@
         "type": "blitz",
         "year_ago_rating_change": -58,
         "year_ago_ranking_change": -1,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 4168119,
@@ -1569,7 +1569,7 @@
         "type": "blitz",
         "year_ago_rating_change": 31,
         "year_ago_ranking_change": 6,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 24126055,
@@ -1596,7 +1596,7 @@
         "type": "blitz",
         "year_ago_rating_change": 11,
         "year_ago_ranking_change": 2,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 5202213,
@@ -1623,7 +1623,7 @@
         "type": "blitz",
         "year_ago_rating_change": -13,
         "year_ago_ranking_change": -2,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 13300474,
@@ -1650,7 +1650,7 @@
         "type": "blitz",
         "year_ago_rating_change": 37,
         "year_ago_ranking_change": 7,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 14204118,
@@ -1677,7 +1677,7 @@
         "type": "blitz",
         "year_ago_rating_change": 61,
         "year_ago_ranking_change": 14,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 8603677,
@@ -1704,7 +1704,7 @@
         "type": "blitz",
         "year_ago_rating_change": -28,
         "year_ago_ranking_change": -3,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 24130737,
@@ -1731,7 +1731,7 @@
         "type": "blitz",
         "year_ago_rating_change": 68,
         "year_ago_ranking_change": 23,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 2020009,
@@ -1758,7 +1758,7 @@
         "type": "blitz",
         "year_ago_rating_change": -45,
         "year_ago_ranking_change": -6,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 1170546,
@@ -1785,7 +1785,7 @@
         "type": "blitz",
         "year_ago_rating_change": -26,
         "year_ago_ranking_change": -4,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 35009192,
@@ -1812,7 +1812,7 @@
         "type": "blitz",
         "year_ago_rating_change": 0,
         "year_ago_ranking_change": -1,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 14120828,
@@ -1839,7 +1839,7 @@
         "type": "blitz",
         "year_ago_rating_change": -14,
         "year_ago_ranking_change": -3,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 623539,
@@ -1866,7 +1866,7 @@
         "type": "blitz",
         "year_ago_rating_change": -31,
         "year_ago_ranking_change": -6,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 2093596,
@@ -1893,7 +1893,7 @@
         "type": "blitz",
         "year_ago_rating_change": 25,
         "year_ago_ranking_change": 5,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 24101605,
@@ -1920,7 +1920,7 @@
         "type": "blitz",
         "year_ago_rating_change": -3,
         "year_ago_ranking_change": -2,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 5000017,
@@ -1947,7 +1947,7 @@
         "type": "blitz",
         "year_ago_rating_change": -7,
         "year_ago_ranking_change": -5,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 8601445,
@@ -1974,7 +1974,7 @@
         "type": "blitz",
         "year_ago_rating_change": -41,
         "year_ago_ranking_change": 0,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 2040506,
@@ -2001,7 +2001,7 @@
         "type": "blitz",
         "year_ago_rating_change": 21,
         "year_ago_ranking_change": 7,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 8603405,
@@ -2028,7 +2028,7 @@
         "type": "blitz",
         "year_ago_rating_change": -14,
         "year_ago_ranking_change": -4,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 24133795,
@@ -2055,7 +2055,7 @@
         "type": "blitz",
         "year_ago_rating_change": 15,
         "year_ago_ranking_change": 7,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 8603820,
@@ -2082,7 +2082,7 @@
         "type": "blitz",
         "year_ago_rating_change": -24,
         "year_ago_ranking_change": -7,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 25059530,
@@ -2109,7 +2109,7 @@
         "type": "blitz",
         "year_ago_rating_change": -13,
         "year_ago_ranking_change": -6,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 2047640,
@@ -2136,7 +2136,7 @@
         "type": "blitz",
         "year_ago_rating_change": -4,
         "year_ago_ranking_change": 0,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       },
       {
         "fideid": 24116068,
@@ -2163,7 +2163,7 @@
         "type": "blitz",
         "year_ago_rating_change": 42,
         "year_ago_ranking_change": 21,
-        "last_updated_gmt": "1 December 2025, 13:42"
+        "last_updated_gmt": "1 December 2025, 20:44"
       }
     ]
   },
@@ -2194,7 +2194,7 @@
         "type": "standard",
         "year_ago_rating_change": -20,
         "year_ago_ranking_change": 0,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 8608059,
@@ -2221,7 +2221,7 @@
         "type": "standard",
         "year_ago_rating_change": 65,
         "year_ago_ranking_change": 8,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 8605114,
@@ -2248,7 +2248,7 @@
         "type": "standard",
         "year_ago_rating_change": 20,
         "year_ago_ranking_change": 1,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 8603006,
@@ -2275,7 +2275,7 @@
         "type": "standard",
         "year_ago_rating_change": 2,
         "year_ago_ranking_change": -2,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 5008123,
@@ -2302,7 +2302,7 @@
         "type": "standard",
         "year_ago_rating_change": 12,
         "year_ago_ranking_change": 1,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 4147103,
@@ -2329,7 +2329,7 @@
         "type": "standard",
         "year_ago_rating_change": -12,
         "year_ago_ranking_change": -1,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 8603642,
@@ -2356,7 +2356,7 @@
         "type": "standard",
         "year_ago_rating_change": -37,
         "year_ago_ranking_change": -4,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 14111330,
@@ -2383,7 +2383,7 @@
         "type": "standard",
         "year_ago_rating_change": 3,
         "year_ago_ranking_change": 1,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 14109336,
@@ -2410,7 +2410,7 @@
         "type": "standard",
         "year_ago_rating_change": -7,
         "year_ago_ranking_change": -1,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 24171760,
@@ -2437,7 +2437,7 @@
         "type": "standard",
         "year_ago_rating_change": -2,
         "year_ago_ranking_change": 1,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 13708694,
@@ -2464,7 +2464,7 @@
         "type": "standard",
         "year_ago_rating_change": 5,
         "year_ago_ranking_change": 2,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 35006916,
@@ -2491,7 +2491,7 @@
         "type": "standard",
         "year_ago_rating_change": 7,
         "year_ago_ranking_change": 2,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 4128125,
@@ -2518,7 +2518,7 @@
         "type": "standard",
         "year_ago_rating_change": -1,
         "year_ago_ranking_change": 4,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 4264312,
@@ -2545,7 +2545,7 @@
         "type": "standard",
         "year_ago_rating_change": 28,
         "year_ago_ranking_change": 9,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 4198026,
@@ -2572,7 +2572,7 @@
         "type": "standard",
         "year_ago_rating_change": -18,
         "year_ago_ranking_change": -3,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 14114550,
@@ -2599,7 +2599,7 @@
         "type": "standard",
         "year_ago_rating_change": -15,
         "year_ago_ranking_change": -1,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 5091756,
@@ -2626,7 +2626,7 @@
         "type": "standard",
         "year_ago_rating_change": -3,
         "year_ago_ranking_change": 1,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 13601903,
@@ -2653,7 +2653,7 @@
         "type": "standard",
         "year_ago_rating_change": -49,
         "year_ago_ranking_change": -11,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 5015197,
@@ -2680,7 +2680,7 @@
         "type": "standard",
         "year_ago_rating_change": -23,
         "year_ago_ranking_change": -3,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 13602993,
@@ -2707,7 +2707,7 @@
         "type": "standard",
         "year_ago_rating_change": -14,
         "year_ago_ranking_change": -1,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       }
     ],
     "rapid": [
@@ -2736,7 +2736,7 @@
         "type": "rapid",
         "year_ago_rating_change": -3,
         "year_ago_ranking_change": 0,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 8603006,
@@ -2763,7 +2763,7 @@
         "type": "rapid",
         "year_ago_rating_change": -6,
         "year_ago_ranking_change": 0,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 8603642,
@@ -2790,7 +2790,7 @@
         "type": "rapid",
         "year_ago_rating_change": 5,
         "year_ago_ranking_change": 1,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 4147103,
@@ -2817,7 +2817,7 @@
         "type": "rapid",
         "year_ago_rating_change": 10,
         "year_ago_ranking_change": 2,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 8605114,
@@ -2844,7 +2844,7 @@
         "type": "rapid",
         "year_ago_rating_change": -22,
         "year_ago_ranking_change": -2,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 13708694,
@@ -2871,7 +2871,7 @@
         "type": "rapid",
         "year_ago_rating_change": 17,
         "year_ago_ranking_change": 3,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 14109336,
@@ -2898,7 +2898,7 @@
         "type": "rapid",
         "year_ago_rating_change": 19,
         "year_ago_ranking_change": 5,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 4128125,
@@ -2925,7 +2925,7 @@
         "type": "rapid",
         "year_ago_rating_change": -36,
         "year_ago_ranking_change": -1,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 5008123,
@@ -2952,7 +2952,7 @@
         "type": "rapid",
         "year_ago_rating_change": 17,
         "year_ago_ranking_change": 5,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 13700090,
@@ -2979,7 +2979,7 @@
         "type": "rapid",
         "year_ago_rating_change": -7,
         "year_ago_ranking_change": 0,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 5015197,
@@ -3006,7 +3006,7 @@
         "type": "rapid",
         "year_ago_rating_change": 19,
         "year_ago_ranking_change": 5,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 8608059,
@@ -3033,7 +3033,7 @@
         "type": "rapid",
         "year_ago_rating_change": -14,
         "year_ago_ranking_change": -4,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 8601283,
@@ -3060,7 +3060,7 @@
         "type": "rapid",
         "year_ago_rating_change": -3,
         "year_ago_ranking_change": -2,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 13601903,
@@ -3087,7 +3087,7 @@
         "type": "rapid",
         "year_ago_rating_change": -11,
         "year_ago_ranking_change": -4,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 14114550,
@@ -3114,7 +3114,7 @@
         "type": "rapid",
         "year_ago_rating_change": -1,
         "year_ago_ranking_change": 0,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 35006916,
@@ -3141,7 +3141,7 @@
         "type": "rapid",
         "year_ago_rating_change": 26,
         "year_ago_ranking_change": 7,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 30941822,
@@ -3168,7 +3168,7 @@
         "type": "rapid",
         "year_ago_rating_change": -3,
         "year_ago_ranking_change": 0,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 4641833,
@@ -3195,7 +3195,7 @@
         "type": "rapid",
         "year_ago_rating_change": -4,
         "year_ago_ranking_change": 1,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 13712802,
@@ -3222,7 +3222,7 @@
         "type": "rapid",
         "year_ago_rating_change": 30,
         "year_ago_ranking_change": 13,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 14111330,
@@ -3249,7 +3249,7 @@
         "type": "rapid",
         "year_ago_rating_change": -10,
         "year_ago_ranking_change": -2,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       }
     ],
     "blitz": [
@@ -3278,7 +3278,7 @@
         "type": "blitz",
         "year_ago_rating_change": -1,
         "year_ago_ranking_change": 0,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 8603006,
@@ -3305,7 +3305,7 @@
         "type": "blitz",
         "year_ago_rating_change": 9,
         "year_ago_ranking_change": 2,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 8605114,
@@ -3332,7 +3332,7 @@
         "type": "blitz",
         "year_ago_rating_change": -13,
         "year_ago_ranking_change": -1,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 8603642,
@@ -3359,7 +3359,7 @@
         "type": "blitz",
         "year_ago_rating_change": -29,
         "year_ago_ranking_change": -1,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 14109336,
@@ -3386,7 +3386,7 @@
         "type": "blitz",
         "year_ago_rating_change": 4,
         "year_ago_ranking_change": 1,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 4147103,
@@ -3413,7 +3413,7 @@
         "type": "blitz",
         "year_ago_rating_change": -2,
         "year_ago_ranking_change": 2,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 5008123,
@@ -3440,7 +3440,7 @@
         "type": "blitz",
         "year_ago_rating_change": 16,
         "year_ago_ranking_change": 6,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 13708694,
@@ -3467,7 +3467,7 @@
         "type": "blitz",
         "year_ago_rating_change": -15,
         "year_ago_ranking_change": -1,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 4128125,
@@ -3494,7 +3494,7 @@
         "type": "blitz",
         "year_ago_rating_change": -23,
         "year_ago_ranking_change": -4,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 8608059,
@@ -3521,7 +3521,7 @@
         "type": "blitz",
         "year_ago_rating_change": -9,
         "year_ago_ranking_change": 0,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 4264312,
@@ -3548,7 +3548,7 @@
         "type": "blitz",
         "year_ago_rating_change": 138,
         "year_ago_ranking_change": 68,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 34127035,
@@ -3575,7 +3575,7 @@
         "type": "blitz",
         "year_ago_rating_change": 25,
         "year_ago_ranking_change": 7,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 5091756,
@@ -3602,7 +3602,7 @@
         "type": "blitz",
         "year_ago_rating_change": 42,
         "year_ago_ranking_change": 14,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 24171760,
@@ -3629,7 +3629,7 @@
         "type": "blitz",
         "year_ago_rating_change": -16,
         "year_ago_ranking_change": -2,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 14111330,
@@ -3656,7 +3656,7 @@
         "type": "blitz",
         "year_ago_rating_change": -5,
         "year_ago_ranking_change": -1,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 5015197,
@@ -3683,7 +3683,7 @@
         "type": "blitz",
         "year_ago_rating_change": -11,
         "year_ago_ranking_change": -1,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 35006916,
@@ -3710,7 +3710,7 @@
         "type": "blitz",
         "year_ago_rating_change": 55,
         "year_ago_ranking_change": 21,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 8601283,
@@ -3737,7 +3737,7 @@
         "type": "blitz",
         "year_ago_rating_change": -24,
         "year_ago_ranking_change": 0,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 30973007,
@@ -3764,7 +3764,7 @@
         "type": "blitz",
         "year_ago_rating_change": 154,
         "year_ago_ranking_change": 98,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       },
       {
         "fideid": 13601903,
@@ -3791,7 +3791,7 @@
         "type": "blitz",
         "year_ago_rating_change": 7,
         "year_ago_ranking_change": 5,
-        "last_updated_gmt": "1 December 2025, 10:42"
+        "last_updated_gmt": "1 December 2025, 20:22"
       }
     ]
   },
@@ -3800,28 +3800,28 @@
       "fideid": 25059530,
       "name": "Praggnanandhaa R",
       "age": 20,
-      "raiting": "2761.1",
-      "raitingDiff": 0.1,
+      "raiting": "2759.1",
+      "raitingDiff": -1.9,
       "pos_change": "",
       "live_pos": 1,
       "flag": "in",
       "games_archive": "/games?search=Praggnanandhaa%2C+Rameshbabu",
       "statistic": "/charts/praggnanandhaa_r",
       "profile": "/players/praggnanandhaa_r",
-      "games_count": 6,
+      "games_count": 7,
       "country_name": "India",
       "birthday": "10 Aug 2005",
       "birthday_unix": 1123632000,
       "sort_helper": "_1",
       "best_pos_title": "Please log in to check the best ranks",
       "best_rating_title": "Best Junior Rating 2785 - Sep 2025\nlog in to check the rank at that time",
-      "tooltip_text": "6 games, +0.1",
+      "tooltip_text": "7 games, &minus;1.9",
       "live": false,
-      "last_update": 1764460800,
+      "last_update": 1764547200,
       "type": "juniors",
-      "year_ago_rating_change": 24.09999999999991,
+      "year_ago_rating_change": 22.09999999999991,
       "year_ago_ranking_change": 2,
-      "last_updated_gmt": "1 December 2025, 13:42"
+      "last_updated_gmt": "1 December 2025, 20:44"
     },
     {
       "fideid": 46616543,
@@ -3848,7 +3848,7 @@
       "type": "juniors",
       "year_ago_rating_change": -29,
       "year_ago_ranking_change": -1,
-      "last_updated_gmt": "1 December 2025, 13:42"
+      "last_updated_gmt": "1 December 2025, 20:44"
     },
     {
       "fideid": 14205483,
@@ -3875,7 +3875,7 @@
       "type": "juniors",
       "year_ago_rating_change": 44,
       "year_ago_ranking_change": 2,
-      "last_updated_gmt": "1 December 2025, 13:42"
+      "last_updated_gmt": "1 December 2025, 20:44"
     },
     {
       "fideid": 44599790,
@@ -3902,7 +3902,7 @@
       "type": "juniors",
       "year_ago_rating_change": 59,
       "year_ago_ranking_change": 14,
-      "last_updated_gmt": "1 December 2025, 13:42"
+      "last_updated_gmt": "1 December 2025, 20:44"
     },
     {
       "fideid": 44155573,
@@ -3929,7 +3929,7 @@
       "type": "juniors",
       "year_ago_rating_change": -17,
       "year_ago_ranking_change": 4,
-      "last_updated_gmt": "1 December 2025, 13:42"
+      "last_updated_gmt": "1 December 2025, 20:44"
     },
     {
       "fideid": 44507356,
@@ -3956,7 +3956,7 @@
       "type": "juniors",
       "year_ago_rating_change": 21,
       "year_ago_ranking_change": 7,
-      "last_updated_gmt": "1 December 2025, 13:42"
+      "last_updated_gmt": "1 December 2025, 20:44"
     },
     {
       "fideid": 25060783,
@@ -3983,7 +3983,7 @@
       "type": "juniors",
       "year_ago_rating_change": 20,
       "year_ago_ranking_change": 8,
-      "last_updated_gmt": "1 December 2025, 13:42"
+      "last_updated_gmt": "1 December 2025, 20:44"
     },
     {
       "fideid": 35093487,
@@ -4010,34 +4010,34 @@
       "type": "juniors",
       "year_ago_rating_change": -35,
       "year_ago_ranking_change": -1,
-      "last_updated_gmt": "1 December 2025, 13:42"
+      "last_updated_gmt": "1 December 2025, 20:44"
     },
     {
       "fideid": 30920019,
       "name": "Mishra, Abhimanyu",
       "age": 16,
-      "raiting": "2632.6",
-      "raitingDiff": -3.4,
+      "raiting": "2634.2",
+      "raitingDiff": -1.8,
       "pos_change": "",
       "live_pos": 9,
       "flag": "us",
       "games_archive": "/games?search=Mishra%2C+Abhimanyu",
       "statistic": "/charts/mishra_abhimanyu",
       "profile": "/players/mishra_abhimanyu",
-      "games_count": 5,
+      "games_count": 6,
       "country_name": "United States of America",
       "birthday": "5 Feb 2009",
       "birthday_unix": 1233792000,
       "sort_helper": "_9",
       "best_pos_title": "Please log in to check the best ranks",
       "best_rating_title": "Best Junior Rating 2652 - Oct 2025\nlog in to check the rank at that time",
-      "tooltip_text": "5 games, &minus;3.4",
+      "tooltip_text": "6 games, &minus;1.8",
       "live": false,
-      "last_update": 1764460800,
+      "last_update": 1764547200,
       "type": "juniors",
-      "year_ago_rating_change": 16.59999999999991,
+      "year_ago_rating_change": 18.199999999999818,
       "year_ago_ranking_change": 7,
-      "last_updated_gmt": "1 December 2025, 13:42"
+      "last_updated_gmt": "1 December 2025, 20:44"
     },
     {
       "fideid": 34189030,
@@ -4064,7 +4064,7 @@
       "type": "juniors",
       "year_ago_rating_change": 77,
       "year_ago_ranking_change": 15,
-      "last_updated_gmt": "1 December 2025, 13:42"
+      "last_updated_gmt": "1 December 2025, 20:44"
     },
     {
       "fideid": 13413937,
@@ -4091,7 +4091,7 @@
       "type": "juniors",
       "year_ago_rating_change": 5,
       "year_ago_ranking_change": 3,
-      "last_updated_gmt": "1 December 2025, 13:42"
+      "last_updated_gmt": "1 December 2025, 20:44"
     },
     {
       "fideid": 35028600,
@@ -4118,7 +4118,7 @@
       "type": "juniors",
       "year_ago_rating_change": 45,
       "year_ago_ranking_change": 8,
-      "last_updated_gmt": "1 December 2025, 13:42"
+      "last_updated_gmt": "1 December 2025, 20:44"
     },
     {
       "fideid": 35042025,
@@ -4145,7 +4145,7 @@
       "type": "juniors",
       "year_ago_rating_change": 74,
       "year_ago_ranking_change": 13,
-      "last_updated_gmt": "1 December 2025, 13:42"
+      "last_updated_gmt": "1 December 2025, 20:44"
     },
     {
       "fideid": 35028561,
@@ -4172,7 +4172,7 @@
       "type": "juniors",
       "year_ago_rating_change": -27,
       "year_ago_ranking_change": -3,
-      "last_updated_gmt": "1 December 2025, 13:42"
+      "last_updated_gmt": "1 December 2025, 20:44"
     },
     {
       "fideid": 36083534,
@@ -4199,7 +4199,7 @@
       "type": "juniors",
       "year_ago_rating_change": 35,
       "year_ago_ranking_change": 7,
-      "last_updated_gmt": "1 December 2025, 13:42"
+      "last_updated_gmt": "1 December 2025, 20:44"
     },
     {
       "fideid": 30953499,
@@ -4226,7 +4226,7 @@
       "type": "juniors",
       "year_ago_rating_change": 78,
       "year_ago_ranking_change": 19,
-      "last_updated_gmt": "1 December 2025, 13:42"
+      "last_updated_gmt": "1 December 2025, 20:44"
     },
     {
       "fideid": 30909694,
@@ -4253,7 +4253,34 @@
       "type": "juniors",
       "year_ago_rating_change": 19,
       "year_ago_ranking_change": 2,
-      "last_updated_gmt": "1 December 2025, 13:42"
+      "last_updated_gmt": "1 December 2025, 20:44"
+    },
+    {
+      "fideid": 46626786,
+      "name": "Pranav Anand",
+      "age": 19,
+      "raiting": "2606.8",
+      "raitingDiff": 15.8,
+      "pos_change": "↑6",
+      "live_pos": 18,
+      "flag": "in",
+      "games_archive": "/games?search=Pranav+Anand",
+      "statistic": "/charts/pranav_anand",
+      "profile": "/players/pranav_anand",
+      "games_count": 7,
+      "country_name": "India",
+      "birthday": "3 Nov 2006",
+      "birthday_unix": 1162512000,
+      "sort_helper": "_18",
+      "best_pos_title": "Please log in to check the best ranks",
+      "best_rating_title": "Best Junior Rating 2603 - Sep 2025\nlog in to check the rank at that time",
+      "tooltip_text": "7 games, +15.8",
+      "live": false,
+      "last_update": 1764547200,
+      "type": "juniors",
+      "year_ago_rating_change": 68.80000000000018,
+      "year_ago_ranking_change": 14,
+      "last_updated_gmt": "1 December 2025, 20:44"
     },
     {
       "fideid": 13515110,
@@ -4261,8 +4288,8 @@
       "age": 19,
       "raiting": "2605.0",
       "raitingDiff": 0,
-      "pos_change": "",
-      "live_pos": 18,
+      "pos_change": "↓1",
+      "live_pos": 19,
       "flag": "ff",
       "games_archive": "/games?search=Lazavik%2C+Denis",
       "statistic": "/charts/lazavik_denis",
@@ -4271,7 +4298,7 @@
       "country_name": "FIDE (Not a National Fed.)",
       "birthday": "17 Nov 2006",
       "birthday_unix": 1163721600,
-      "sort_helper": "_18",
+      "sort_helper": "_19",
       "best_pos_title": "Please log in to check the best ranks",
       "best_rating_title": "Best Junior Rating 2605 - Sep 2025\nlog in to check the rank at that time",
       "tooltip_text": "0 games, +0.0",
@@ -4279,8 +4306,8 @@
       "last_update": null,
       "type": "juniors",
       "year_ago_rating_change": 27,
-      "year_ago_ranking_change": 3,
-      "last_updated_gmt": "1 December 2025, 13:42"
+      "year_ago_ranking_change": 2,
+      "last_updated_gmt": "1 December 2025, 20:44"
     },
     {
       "fideid": 240990,
@@ -4288,8 +4315,8 @@
       "age": 20,
       "raiting": "2603.0",
       "raitingDiff": 0,
-      "pos_change": "",
-      "live_pos": 19,
+      "pos_change": "↓1",
+      "live_pos": 20,
       "flag": "be",
       "games_archive": "/games?search=Dardha%2C+Daniel",
       "statistic": "/charts/dardha_daniel",
@@ -4298,7 +4325,7 @@
       "country_name": "Belgium",
       "birthday": "1 Oct 2005",
       "birthday_unix": 1128124800,
-      "sort_helper": "_19",
+      "sort_helper": "_20",
       "best_pos_title": "Please log in to check the best ranks",
       "best_rating_title": "Best Junior Rating 2665 - Mar 2025\nlog in to check the rank at that time",
       "tooltip_text": "0 games, +0.0",
@@ -4306,35 +4333,8 @@
       "last_update": null,
       "type": "juniors",
       "year_ago_rating_change": -36,
-      "year_ago_ranking_change": -7,
-      "last_updated_gmt": "1 December 2025, 13:42"
-    },
-    {
-      "fideid": 46626786,
-      "name": "Pranav Anand",
-      "age": 19,
-      "raiting": "2602.8",
-      "raitingDiff": 11.8,
-      "pos_change": "↑4",
-      "live_pos": 20,
-      "flag": "in",
-      "games_archive": "/games?search=Pranav+Anand",
-      "statistic": "/charts/pranav_anand",
-      "profile": "/players/pranav_anand",
-      "games_count": 6,
-      "country_name": "India",
-      "birthday": "3 Nov 2006",
-      "birthday_unix": 1162512000,
-      "sort_helper": "_20",
-      "best_pos_title": "Please log in to check the best ranks",
-      "best_rating_title": "Best Junior Rating 2603 - Sep 2025\nlog in to check the rank at that time",
-      "tooltip_text": "6 games, +11.8",
-      "live": false,
-      "last_update": 1764460800,
-      "type": "juniors",
-      "year_ago_rating_change": 64.80000000000018,
-      "year_ago_ranking_change": 12,
-      "last_updated_gmt": "1 December 2025, 13:42"
+      "year_ago_ranking_change": -8,
+      "last_updated_gmt": "1 December 2025, 20:44"
     }
   ],
   "girls": [
@@ -4363,7 +4363,7 @@
       "type": "girls",
       "year_ago_rating_change": 7,
       "year_ago_ranking_change": 1,
-      "last_updated_gmt": "1 December 2025, 10:42"
+      "last_updated_gmt": "1 December 2025, 20:22"
     },
     {
       "fideid": 8614300,
@@ -4390,7 +4390,7 @@
       "type": "girls",
       "year_ago_rating_change": 70,
       "year_ago_ranking_change": 5,
-      "last_updated_gmt": "1 December 2025, 10:42"
+      "last_updated_gmt": "1 December 2025, 20:22"
     },
     {
       "fideid": 8618020,
@@ -4417,7 +4417,7 @@
       "type": "girls",
       "year_ago_rating_change": -10,
       "year_ago_ranking_change": 1,
-      "last_updated_gmt": "1 December 2025, 10:42"
+      "last_updated_gmt": "1 December 2025, 20:22"
     },
     {
       "fideid": 54180058,
@@ -4444,7 +4444,7 @@
       "type": "girls",
       "year_ago_rating_change": 186,
       "year_ago_ranking_change": 39,
-      "last_updated_gmt": "1 December 2025, 10:42"
+      "last_updated_gmt": "1 December 2025, 20:22"
     },
     {
       "fideid": 30941822,
@@ -4471,7 +4471,7 @@
       "type": "girls",
       "year_ago_rating_change": 10,
       "year_ago_ranking_change": 1,
-      "last_updated_gmt": "1 December 2025, 10:42"
+      "last_updated_gmt": "1 December 2025, 20:22"
     },
     {
       "fideid": 14210444,
@@ -4498,7 +4498,7 @@
       "type": "girls",
       "year_ago_rating_change": 49,
       "year_ago_ranking_change": 5,
-      "last_updated_gmt": "1 December 2025, 10:42"
+      "last_updated_gmt": "1 December 2025, 20:22"
     },
     {
       "fideid": 1058401,
@@ -4525,7 +4525,7 @@
       "type": "girls",
       "year_ago_rating_change": 25.09999999999991,
       "year_ago_ranking_change": 2,
-      "last_updated_gmt": "1 December 2025, 10:42"
+      "last_updated_gmt": "1 December 2025, 20:22"
     },
     {
       "fideid": 25073230,
@@ -4552,7 +4552,7 @@
       "type": "girls",
       "year_ago_rating_change": 94,
       "year_ago_ranking_change": 21,
-      "last_updated_gmt": "1 December 2025, 10:42"
+      "last_updated_gmt": "1 December 2025, 20:22"
     },
     {
       "fideid": 777765,
@@ -4579,7 +4579,7 @@
       "type": "girls",
       "year_ago_rating_change": -44,
       "year_ago_ranking_change": -4,
-      "last_updated_gmt": "1 December 2025, 10:42"
+      "last_updated_gmt": "1 December 2025, 20:22"
     },
     {
       "fideid": 13719688,
@@ -4606,7 +4606,7 @@
       "type": "girls",
       "year_ago_rating_change": 56,
       "year_ago_ranking_change": 10,
-      "last_updated_gmt": "1 December 2025, 10:42"
+      "last_updated_gmt": "1 December 2025, 20:22"
     },
     {
       "fideid": 13729390,
@@ -4633,7 +4633,7 @@
       "type": "girls",
       "year_ago_rating_change": 37,
       "year_ago_ranking_change": 4,
-      "last_updated_gmt": "1 December 2025, 10:42"
+      "last_updated_gmt": "1 December 2025, 20:22"
     },
     {
       "fideid": 13712802,
@@ -4660,7 +4660,7 @@
       "type": "girls",
       "year_ago_rating_change": -12,
       "year_ago_ranking_change": -4,
-      "last_updated_gmt": "1 December 2025, 10:42"
+      "last_updated_gmt": "1 December 2025, 20:22"
     },
     {
       "fideid": 2924056,
@@ -4687,7 +4687,7 @@
       "type": "girls",
       "year_ago_rating_change": 64,
       "year_ago_ranking_change": 14,
-      "last_updated_gmt": "1 December 2025, 10:42"
+      "last_updated_gmt": "1 December 2025, 20:22"
     },
     {
       "fideid": 30952530,
@@ -4714,7 +4714,7 @@
       "type": "girls",
       "year_ago_rating_change": 50,
       "year_ago_ranking_change": 11,
-      "last_updated_gmt": "1 December 2025, 10:42"
+      "last_updated_gmt": "1 December 2025, 20:22"
     },
     {
       "fideid": 13712799,
@@ -4741,7 +4741,7 @@
       "type": "girls",
       "year_ago_rating_change": 44,
       "year_ago_ranking_change": 6,
-      "last_updated_gmt": "1 December 2025, 10:42"
+      "last_updated_gmt": "1 December 2025, 20:22"
     },
     {
       "fideid": 4902831,
@@ -4768,7 +4768,7 @@
       "type": "girls",
       "year_ago_rating_change": 82,
       "year_ago_ranking_change": 17,
-      "last_updated_gmt": "1 December 2025, 10:42"
+      "last_updated_gmt": "1 December 2025, 20:22"
     },
     {
       "fideid": 42529271,
@@ -4795,7 +4795,7 @@
       "type": "girls",
       "year_ago_rating_change": 161,
       "year_ago_ranking_change": 65,
-      "last_updated_gmt": "1 December 2025, 10:42"
+      "last_updated_gmt": "1 December 2025, 20:22"
     },
     {
       "fideid": 13725831,
@@ -4822,7 +4822,7 @@
       "type": "girls",
       "year_ago_rating_change": 73,
       "year_ago_ranking_change": 16,
-      "last_updated_gmt": "1 December 2025, 10:42"
+      "last_updated_gmt": "1 December 2025, 20:22"
     },
     {
       "fideid": 45100446,
@@ -4849,7 +4849,7 @@
       "type": "girls",
       "year_ago_rating_change": 122,
       "year_ago_ranking_change": 42,
-      "last_updated_gmt": "1 December 2025, 10:42"
+      "last_updated_gmt": "1 December 2025, 20:22"
     },
     {
       "fideid": 35061887,
@@ -4876,8 +4876,8 @@
       "type": "girls",
       "year_ago_rating_change": 5,
       "year_ago_ranking_change": -4,
-      "last_updated_gmt": "1 December 2025, 10:42"
+      "last_updated_gmt": "1 December 2025, 20:22"
     }
   ],
-  "generated_at": "2025-12-01T14:25:57.838Z"
+  "generated_at": "2025-12-02T10:23:56.214Z"
 }
