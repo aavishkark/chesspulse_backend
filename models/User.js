@@ -12,17 +12,40 @@ const userSchema = new mongoose.Schema({
   },
   username: {
     type: String,
-    required: [true, 'Username is required'],
+    required: function () {
+      return this.provider === 'local';
+    },
     unique: true,
+    sparse: true,
     trim: true,
     minlength: [3, 'Username must be at least 3 characters'],
     maxlength: [20, 'Username must not exceed 20 characters']
   },
   password: {
     type: String,
-    required: [true, 'Password is required'],
+    required: function () {
+      return this.provider === 'local';
+    },
     minlength: [6, 'Password must be at least 6 characters'],
     select: false
+  },
+  provider: {
+    type: String,
+    enum: ['local', 'google', 'github'],
+    default: 'local',
+    required: true
+  },
+  googleId: {
+    type: String,
+    unique: true,
+    sparse: true,
+    default: null
+  },
+  githubId: {
+    type: String,
+    unique: true,
+    sparse: true,
+    default: null
   },
   avatar: {
     type: String,
@@ -41,7 +64,7 @@ const userSchema = new mongoose.Schema({
 });
 
 userSchema.pre('save', async function () {
-  if (!this.isModified('password')) return;
+  if (!this.isModified('password') || !this.password) return;
 
   const salt = await bcrypt.genSalt(10);
   this.password = await bcrypt.hash(this.password, salt);
