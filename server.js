@@ -66,7 +66,7 @@ app.get('/api/health', (req, res) => {
 
 app.use('/api/auth', authRoutes);
 app.use('/api/user', userRoutes);
-app.use('/api/auth', oauthRoutes);
+app.use('/api/oauth', oauthRoutes);
 
 app.use((req, res) => {
     res.status(404).json({
