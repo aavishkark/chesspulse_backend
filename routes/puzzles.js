@@ -154,6 +154,30 @@ router.post('/attempt', authenticate, async (req, res) => {
     }
 });
 
+router.get('/rating', authenticate, async (req, res) => {
+    try {
+        const userId = req.userId;
+        const stats = await UserPuzzleStats.getOrCreate(userId);
+
+        return successResponse(res, {
+            rating: stats.rating,
+            peakRating: stats.peakRating,
+            ratingHistory: stats.ratingHistory.slice(-50).map(r => ({
+                date: r.date,
+                rating: r.rating
+            })),
+            modeStats: {
+                solved: stats.modeStats.rated?.solved || 0,
+                attempted: stats.modeStats.rated?.attempted || 0
+            }
+        }, 'Rating fetched');
+
+    } catch (error) {
+        console.error('Error fetching rating:', error);
+        return errorResponse(res, 'Failed to fetch rating', 500);
+    }
+});
+
 router.get('/stats', authenticate, async (req, res) => {
     try {
         const userId = req.userId;
