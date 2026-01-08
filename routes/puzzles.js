@@ -75,17 +75,17 @@ router.post('/attempt', authenticate, async (req, res) => {
 
         stats.updateStreak(solved);
 
-        if (themes && themes.length > 0) {
+        if (themes && Array.isArray(themes) && themes.length > 0) {
             themes.forEach(theme => {
                 const themeLower = theme.toLowerCase();
-                if (!stats.themeStats.has(themeLower)) {
-                    stats.themeStats.set(themeLower, { solved: 0, attempted: 0 });
-                }
-                const themeStat = stats.themeStats.get(themeLower);
-                themeStat.attempted += 1;
-                if (solved) themeStat.solved += 1;
-                stats.themeStats.set(themeLower, themeStat);
+                const existing = stats.themeStats.get(themeLower) || { solved: 0, attempted: 0 };
+
+                stats.themeStats.set(themeLower, {
+                    attempted: (existing.attempted || 0) + 1,
+                    solved: solved ? (existing.solved || 0) + 1 : (existing.solved || 0)
+                });
             });
+            stats.markModified('themeStats');
         }
 
         const diffTier = getDifficultyTier(puzzleRating);
@@ -188,12 +188,15 @@ router.get('/stats', authenticate, async (req, res) => {
             : 0;
 
         const themeStatsObj = {};
-        stats.themeStats.forEach((value, key) => {
+        for (const [key, value] of stats.themeStats.entries()) {
+            const attempted = value.attempted || 0;
+            const solved = value.solved || 0;
             themeStatsObj[key] = {
-                ...value,
-                accuracy: value.attempted > 0 ? Math.round((value.solved / value.attempted) * 100) : 0
+                solved,
+                attempted,
+                accuracy: attempted > 0 ? Math.round((solved / attempted) * 100) : 0
             };
-        });
+        }
 
         const topThemes = Object.entries(themeStatsObj)
             .sort((a, b) => b[1].attempted - a[1].attempted)
@@ -577,6 +580,34 @@ router.post('/session-feedback', authenticate, async (req, res) => {
     } catch (error) {
         console.error('Error generating session feedback:', error);
         return errorResponse(res, 'Failed to generate session feedback', 500);
+    }
+});
+
+router.get('/curation-plan', authenticate, async (req, res) => {
+    try {
+        const userId = req.userId;
+        const stats = await UserPuzzleStats.getOrCreate(userId);
+
+        const weakThemes = [];
+        const strongThemes = [];
+        stats.themeStats.forEach((value, key) => {
+            if (value.attempted >= 3) {
+                const accuracy = Math.round((value.solved / value.attempted) * 100);
+                if (accuracy < 55) weakThemes.push({ theme: key, accuracy });
+                else if (accuracy >= 75) strongThemes.push({ theme: key, accuracy });
+            }
+        });
+
+        const plan = await geminiService.getCuratedCuration({
+            rating: stats.rating,
+            weakThemes: weakThemes.sort((a, b) => a.accuracy - b.accuracy).slice(0, 5),
+            strongThemes: strongThemes.sort((a, b) => b.accuracy - a.accuracy).slice(0, 5)
+        });
+
+        return successResponse(res, plan, 'Curation plan generated');
+    } catch (error) {
+        console.error('Error generating curation plan:', error);
+        return errorResponse(res, 'Failed to generate curation plan', 500);
     }
 });
 

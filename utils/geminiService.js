@@ -246,6 +246,47 @@ Respond in JSON format:
                 strength: "You showed persistence!"
             };
         }
+    },
+
+    async getCuratedCuration(stats) {
+        try {
+            const systemPrompt = 'You are a chess puzzle curator. Generate a personalized training plan of 30 puzzles. Respond in JSON format only.';
+            const userPrompt = `Create a 30-puzzle training plan based on these user stats.
+            
+Player Stats:
+- Rating: ${stats.rating}
+- Weak Themes: ${stats.weakThemes?.map(t => `${t.theme} (${t.accuracy}%)`).join(', ') || 'None identified'}
+- Strong Themes: ${stats.strongThemes?.map(t => `${t.theme} (${t.accuracy}%)`).join(', ') || 'None identified'}
+
+Requirements:
+- Total puzzles must be 30.
+- Distribute counts based on weaknesses (e.g., more puzzles for themes with lower accuracy).
+- Include some "confidence builder" puzzles from strong themes (about 10-20%).
+- If no weak/strong themes are provided, suggest a diverse mix of 5-6 common tactical themes.
+
+Respond in JSON format:
+{
+  "themes": [
+    { "theme": "string", "count": number, "reason": "why this theme was included" }
+  ],
+  "totalCount": 30,
+  "summary": "Short explanation of this curated set (1-2 sentences)"
+}`;
+
+            const result = await callGroqAPI(systemPrompt, userPrompt);
+            return safeJSONParse(result);
+        } catch (error) {
+            console.error('Groq curation error:', error);
+            return {
+                themes: [
+                    { theme: 'mateIn1', count: 10, reason: 'Fundamental skill' },
+                    { theme: 'fork', count: 10, reason: 'Common tactic' },
+                    { theme: 'pin', count: 10, reason: 'Essential pattern' }
+                ],
+                totalCount: 30,
+                summary: "A balanced set of core tactical patterns."
+            };
+        }
     }
 };
 
