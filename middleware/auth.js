@@ -31,3 +31,28 @@ export const authenticate = async (req, res, next) => {
     return unauthorizedResponse(res, 'Invalid token');
   }
 };
+
+export const optionalAuth = async (req, res, next) => {
+  try {
+    const authHeader = req.headers.authorization;
+
+    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+      return next();
+    }
+
+    const token = authHeader.substring(7);
+    const decoded = verifyAccessToken(token);
+    const user = await User.findById(decoded.userId).select('-password');
+
+    if (user) {
+      req.user = user;
+      req.userId = user._id;
+    }
+
+    next();
+  } catch (error) {
+    next();
+  }
+};
+
+export const authenticateToken = authenticate;

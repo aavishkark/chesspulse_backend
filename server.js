@@ -10,6 +10,7 @@ import authRoutes from './routes/auth.js';
 import userRoutes from './routes/user.js';
 import oauthRoutes from './routes/oauth.js';
 import puzzleRoutes from './routes/puzzles.js';
+import botGameRoutes from './routes/botGames.js';
 import errorHandler from './middleware/errorHandler.js';
 import { apiLimiter } from './middleware/rateLimiter.js';
 
@@ -53,7 +54,8 @@ app.get('/', (req, res) => {
         endpoints: {
             auth: '/api/auth',
             user: '/api/user',
-            puzzles: '/api/puzzles'
+            puzzles: '/api/puzzles',
+            botGames: '/api/bot-games'
         }
     });
 });
@@ -70,6 +72,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/user', userRoutes);
 app.use('/api/oauth', oauthRoutes);
 app.use('/api/puzzles', puzzleRoutes);
+app.use('/api/bot-games', botGameRoutes);
 
 app.use((req, res) => {
     res.status(404).json({
