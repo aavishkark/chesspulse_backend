@@ -1,5 +1,7 @@
 import 'dotenv/config';
 import express from 'express';
+import { createServer } from 'http';
+import { Server } from 'socket.io';
 import session from 'express-session';
 import cors from 'cors';
 import helmet from 'helmet';
@@ -13,11 +15,23 @@ import puzzleRoutes from './routes/puzzles.js';
 import botGameRoutes from './routes/botGames.js';
 import errorHandler from './middleware/errorHandler.js';
 import { apiLimiter } from './middleware/rateLimiter.js';
+import { initializeSocketHandlers } from './socket/socketHandler.js';
 
 const app = express();
+const httpServer = createServer(app);
+const io = new Server(httpServer, {
+    cors: {
+        origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+        methods: ['GET', 'POST'],
+        credentials: true
+    }
+});
+
 const PORT = process.env.PORT || 5000;
 
 connectDB();
+    
+initializeSocketHandlers(io);
 
 app.use(helmet());
 
@@ -83,10 +97,11 @@ app.use((req, res) => {
 
 app.use(errorHandler);
 
-app.listen(PORT, () => {
+httpServer.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
     console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
     console.log(`Frontend URL: ${process.env.FRONTEND_URL || 'http://localhost:5173'}`);
+    console.log('Socket.io server initialized');
 });
 
 process.on('unhandledRejection', (err) => {
