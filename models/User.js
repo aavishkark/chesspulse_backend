@@ -53,6 +53,89 @@ const userSchema = new mongoose.Schema({
     type: String,
     default: null
   },
+  ratings: {
+    bullet: {
+      rating: { type: Number, default: 1200 },
+      highestRating: { type: Number, default: 1200 },
+      ratingHistory: [{
+        rating: Number,
+        date: { type: Date, default: Date.now }
+      }],
+      gamesPlayed: { type: Number, default: 0 },
+      wins: { type: Number, default: 0 },
+      losses: { type: Number, default: 0 },
+      draws: { type: Number, default: 0 },
+      currentStreak: { type: Number, default: 0 },
+      bestStreak: { type: Number, default: 0 },
+      detailedStats: {
+        white: { gamesPlayed: { type: Number, default: 0 }, wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+        black: { gamesPlayed: { type: Number, default: 0 }, wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+        outcomes: {
+          timeout: { wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+          checkmate: { wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+          resignation: { wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+          stalemate: { wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+          repetition: { wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+          insufficient: { wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+          abandonment: { wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } }
+        }
+      }
+    },
+    blitz: {
+      rating: { type: Number, default: 1200 },
+      highestRating: { type: Number, default: 1200 },
+      ratingHistory: [{
+        rating: Number,
+        date: { type: Date, default: Date.now }
+      }],
+      gamesPlayed: { type: Number, default: 0 },
+      wins: { type: Number, default: 0 },
+      losses: { type: Number, default: 0 },
+      draws: { type: Number, default: 0 },
+      currentStreak: { type: Number, default: 0 },
+      bestStreak: { type: Number, default: 0 },
+      detailedStats: {
+        white: { gamesPlayed: { type: Number, default: 0 }, wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+        black: { gamesPlayed: { type: Number, default: 0 }, wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+        outcomes: {
+          timeout: { wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+          checkmate: { wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+          resignation: { wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+          stalemate: { wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+          repetition: { wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+          insufficient: { wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+          abandonment: { wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } }
+        }
+      }
+    },
+    rapid: {
+      rating: { type: Number, default: 1200 },
+      highestRating: { type: Number, default: 1200 },
+      ratingHistory: [{
+        rating: Number,
+        date: { type: Date, default: Date.now }
+      }],
+      gamesPlayed: { type: Number, default: 0 },
+      wins: { type: Number, default: 0 },
+      losses: { type: Number, default: 0 },
+      draws: { type: Number, default: 0 },
+      currentStreak: { type: Number, default: 0 },
+      bestStreak: { type: Number, default: 0 },
+      detailedStats: {
+        white: { gamesPlayed: { type: Number, default: 0 }, wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+        black: { gamesPlayed: { type: Number, default: 0 }, wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+        outcomes: {
+          timeout: { wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+          checkmate: { wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+          resignation: { wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+          stalemate: { wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+          repetition: { wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+          insufficient: { wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } },
+          abandonment: { wins: { type: Number, default: 0 }, losses: { type: Number, default: 0 }, draws: { type: Number, default: 0 } }
+        }
+      }
+    }
+  },
   lastLogin: {
     type: Date,
     default: null
