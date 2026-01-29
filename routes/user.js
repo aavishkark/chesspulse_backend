@@ -33,12 +33,18 @@ const updateProfileValidation = [
     .withMessage('Avatar must be a valid URL'),
   body('country')
     .optional()
+    .trim(),
+  body('chesscomUsername')
+    .optional()
+    .trim(),
+  body('lichessUsername')
+    .optional()
     .trim()
 ];
 
 router.put('/profile', authenticate, validate(updateProfileValidation), async (req, res, next) => {
   try {
-    const { username, avatar, country } = req.body;
+    const { username, avatar, country, chesscomUsername, lichessUsername } = req.body;
 
     const updateData = {};
     if (username) {
@@ -50,6 +56,8 @@ router.put('/profile', authenticate, validate(updateProfileValidation), async (r
     }
     if (avatar) updateData.avatar = avatar;
     if (country !== undefined) updateData.country = country;
+    if (chesscomUsername !== undefined) updateData.chesscomUsername = chesscomUsername;
+    if (lichessUsername !== undefined) updateData.lichessUsername = lichessUsername;
 
     const user = await User.findByIdAndUpdate(
       req.userId,

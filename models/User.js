@@ -53,6 +53,16 @@ const userSchema = new mongoose.Schema({
     type: String,
     default: null
   },
+  chesscomUsername: {
+    type: String,
+    default: null,
+    trim: true
+  },
+  lichessUsername: {
+    type: String,
+    default: null,
+    trim: true
+  },
   ratings: {
     bullet: {
       rating: { type: Number, default: 1200 },
